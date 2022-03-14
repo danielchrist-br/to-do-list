@@ -1,0 +1,116 @@
+:root {
+  --background-white: #DADFE8;
+  --blue: #2668be;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--background-white);
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 2rem 1.2rem;
+  height: 85%;
+
+  max-width: 900px;
+}
+
+.main-header {
+  margin-bottom: 2rem;
+}
+
+/* Titulo =============================== */
+
+.header-titulo {
+  margin-bottom: 0.8rem;
+}
+
+/* Formulario =========================== */
+
+.header-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.header-form input {
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 1rem;
+  height: 1.3rem;
+  padding: 0.2rem 0.4rem;
+  width: 95%;
+}
+
+.header-form .btn-form {
+  background: var(--blue);
+  border: none;
+  border-radius: 6px;
+  color: #f1f1f1;
+  font-size: 1.06rem;
+  font-weight: 400;
+  height: 2rem;
+  width: 50%;
+}
+
+/* Lista ============================ */
+
+.main-lista {
+  height: 70%;
+  padding: .5rem;
+}
+
+.lista-tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  list-style: none;
+  height: 100%;
+}
+
+.lista-tarefas_item {
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  padding: .4rem;
+}
+
+.lista-tarefas_item img {
+  position: relative;
+  top: 3px;
+}
+
+.lista-tarefas_check {
+  align-items: center;
+  display: flex;
+  gap: .3rem;
+}
+
+.lista-tarefas_item.done {
+  text-decoration: line-through;
+}
+
+@media (min-width: 675px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 600px;
+  }
+}

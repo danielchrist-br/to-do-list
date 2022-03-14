@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="module" src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="main-header">
+        <h1 class="header-titulo">DevTasks</h1>
+        <form class="header-form" action="" data-form>
+          <input type="text" class="texto" data-form-input/>
+
+          <button class="btn-form" data-form-button>Adicionar tarefa</button>
+        </form>
+      </section>
+
+      <section class="main-lista">
+        <ul class="lista-tarefas" data-list>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
